@@ -1,4 +1,3 @@
-//your JS code here. If required.
 const container = document.querySelector('.container');
 
 const boxCount = 800;
@@ -8,11 +7,9 @@ for(let i = 0; i < boxCount; i++){
     box.classList.add('square');
 
     box.addEventListener('mouseover', () => {
-        const randomColor = getRandomColor();
-        box.style.background = randomColor;
-
+        box.style.background = getRandomColor();
         setTimeout(() => {
-            box.style.background = '#222';
+            box.style.background = "rgb(29, 29, 29)"; // return to default
         }, 1000);
     });
 
